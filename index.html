@@ -51,7 +51,7 @@
         </div>
     </main>
     <div id="addWordBox">
-        <input type="password" id="addedWord" oninput="this.value = this.value.replace(/[üöä^a-zA-Z]/g, '')" placeholder="Gib dein eigenes Wort ein (nur Buchstaben), mit dem das Spiel starten soll.">
+        <input type="password" id="addedWord" oninput="this.value = this.value.replace(/[^a-zA-Z]/g, '')" placeholder="Gib dein eigenes Wort ein (nur Buchstaben), mit dem das Spiel starten soll.">
     </div>
     <footer>
         <marquee scrolldelay="200">Diese One-Page-Website wurde im Auftrag des Dozenten Alp
