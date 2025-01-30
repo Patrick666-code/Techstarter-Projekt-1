@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header>
+        <h1>HANGMAN VS <span id="EVILEREN">EVIL <span style="transform: rotate(180 deg);">&#8224;</span> EREN</span></h1>
+        <h1>--THE GAME--</h1>
+    </header>
+    <main>
+        <div id="levelbox">
+            <select name="levelchoice" id="level" title="Schwierigkeitsgrad wählen" oninput="Level(this.value)">
+                <option value=0>Einfach</option>
+                <option value=1>Mittel</option>
+                <option value=2>Schwer</option>
+            </select>
+            <input type="submit" id="startbutton" value="Start" onclick="Start('')">
+            <input type="button" id="addbutton"value="Erstellen" onclick="addWord()">
+        </div>
+        <div id="Game">
+            <h2 id="points">❤️❤️❤️❤️❤️</h2>
+            <div class="image" id="image0"></div>
+            <div id="imageWin"></div>
+            <div class="EvilErens" id="imageerenstandard"></div>
+            <div><span id="Task"></span></div>
+        </div>
+                        
+        <div id="userInput">
+            <form>
+                <input class="letter" type="button" value="A" onclick="Try(this)" disabled><input class="letter" type="button" value="B" onclick="Try(this)" disabled>
+                <input class="letter" type="button" value="C" onclick="Try(this)" disabled><input class="letter" type="button" value="D" onclick="Try(this)" disabled>
+                <input class="letter" type="button" value="E" onclick="Try(this)" disabled><input class="letter" type="button" value="F" onclick="Try(this)" disabled>
+                <input class="letter" type="button" value="G" onclick="Try(this)" disabled><input class="letter" type="button" value="H" onclick="Try(this)" disabled>
+                <input class="letter" type="button" value="I" onclick="Try(this)" disabled><input class="letter" type="button" value="J" onclick="Try(this)" disabled>
+                <input class="letter" type="button" value="K" onclick="Try(this)" disabled><input class="letter" type="button" value="L" onclick="Try(this)" disabled>
+                <input class="letter" type="button" value="M" onclick="Try(this)" disabled><br>
+                <input class="letter" type="button" value="N" onclick="Try(this)" disabled><input class="letter" type="button" value="O" onclick="Try(this)" disabled>
+                <input class="letter" type="button" value="P" onclick="Try(this)" disabled><input class="letter" type="button" value="Q" onclick="Try(this)" disabled>
+                <input class="letter" type="button" value="R" onclick="Try(this)" disabled><input class="letter" type="button" value="S" onclick="Try(this)" disabled>
+                <input class="letter" type="button" value="T" onclick="Try(this)" disabled><input class="letter" type="button" value="U" onclick="Try(this)" disabled>
+                <input class="letter" type="button" value="V" onclick="Try(this)" disabled><input class="letter" type="button" value="W" onclick="Try(this)" disabled>
+                <input class="letter" type="button" value="X" onclick="Try(this)" disabled><input class="letter" type="button" value="Y" onclick="Try(this)" disabled>
+                <input class="letter" type="button" value="Z" onclick="Try(this)" disabled>
+            </form>
+        </div>
+    </main>
+    <div id="addWordBox">
+        <input type="password" id="addedWord" oninput="this.value = this.value.replace(/[üöä^a-zA-Z]/g, '')" placeholder="Gib dein eigenes Wort ein (nur Buchstaben), mit dem das Spiel starten soll.">
+    </div>
+    <footer>
+        <marquee scrolldelay="200">Diese One-Page-Website wurde im Auftrag des Dozenten Alp
+            Eren Tosyali von Techstarter.GmbH erstellt. Zur Gruppe gehören: Daniel Goldbach, Philipp Schröder, Patrick
+            Gessel, Carlos Bosslar & Johnny Hoffmann.</marquee>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+
+</html>

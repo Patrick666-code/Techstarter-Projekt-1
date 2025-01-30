@@ -1,0 +1,265 @@
+#EVILEREN {
+    background-color: black;
+    color: rgb(250, 70, 70);
+    text-shadow: 2px 2px 5px rgb(255, 0, 0);
+}
+
+body {
+    background-color: black;
+    color: azure;
+    text-shadow: 2px 2px 5px gold;
+    -webkit-user-select: none;
+    user-select: none;
+    min-width: 600px;
+    text-align: center;
+}
+#addWordBox{
+    position: absolute;
+    height:50px;
+    width: 99%;
+    top:180px;
+    visibility: hidden;
+}
+#addWordBox input{
+    background-color: black;
+    color: gold;
+    border: 5px inset gold;
+    border-radius: 15px;
+    height: 50px;
+    width: 550px;
+    text-align: center;
+}
+div {
+    text-align: center;
+}
+
+#points {
+    text-align: left;
+    color: black
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    bottom:1%;
+    left: 2%;
+    width: 95%;
+}
+
+#levelbox {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+#levelbox select {
+    height: 35px;
+    width: 125px;
+    font-size: 20px;
+    border: 2px outset gold;
+    border-radius: 5px 20px;
+    text-align: center;
+}
+
+#levelbox select:hover {
+    box-shadow: 0 0 7px gold;
+}
+
+#levelbox input {
+    height: 35px;
+    width: 125px;
+    font-size: 20px;
+    border: 2px outset gold;
+    background-color: transparent;
+    color: gold;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+#levelbox input:hover {
+    box-shadow: 0 0 7px gold;
+}
+#startbutton {
+    border-radius:5px 5px 20px 20px;
+}
+#addbutton{
+    border-radius: 20px 5px;
+}
+option {
+    color: gold;
+    background-color: black;
+}
+
+#level {
+    width: 100px;
+    height: 25px;
+    background-color: transparent;
+    color: gold;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+#image0 {
+    height: 300px;
+    background-image: url(GalgenSchwung.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#image1 {
+    height: 300px;
+    background-image: url(KopfSchwung.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}#image2 {
+    height: 300px;
+    background-image: url(BoddySchwung.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}#image3 {
+    height: 300px;
+    background-image: url(ArmsSchwung.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}#image4 {
+    height: 300px;
+    background-image: url(LegsSchwung.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}#image5 {
+    height: 300px;
+    background-image: url(DeadSchwung.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#imageWin{
+    position: relative;
+    top:-160px;
+    left: 40%;
+    height: 300px;
+    width: 300px;
+    background-image: url(Gewonnen.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    visibility: hidden;
+}
+#Game {
+    background-image: url(Hintergrund_Hangman.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+/*Philipp Anfang */
+.EvilErens{
+    visibility: hidden;
+}
+
+#imageerenstandard {
+    background-image: url(StanniEren.png);
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:200px;
+    position: relative;
+    top: -450px;
+    left: 67%;
+    width: 250px;
+
+}
+
+#imageerenhappy {
+    background-image: url(HappyEren.png);
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:200px;
+    position: relative;
+    top: -450px;
+    left: 67%;
+    width: 250px;
+}
+
+#imageerensauer {
+    background-image: url(MadEren.png);
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:200px;
+    position: relative;
+    top: -450px;
+    left: 67%;
+    width: 250px;
+}
+
+#imageerenevil {
+    background-image: url(EvilEren.png);
+    background-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:200px;
+    position: relative;
+    top: -450px;
+    left: 67%;
+    width: 250px;
+}
+
+
+
+/* Philipp Ende */
+
+#userInput {
+    position: relative;
+    text-align: center;
+    height: 200px;
+    width: 100%;
+    top: 0px;
+}
+
+.letter {
+    position: relative;
+    top: 25px;
+    height: 35px;
+    width: 35px;
+    background-color: transparent;
+    color: gold;
+    text-align: center;
+    border: 3px outset gold;
+    border-radius: 5px 15px;
+    padding: 0px;
+    margin: 3px;
+}
+
+.letter:hover {
+    box-shadow: 0 0 10px gold;
+}
+
+.letter:active {
+    border: 3px inset silver;
+    color: silver;
+    box-shadow: 0 0 10px silver;
+}
+
+.letter:disabled {
+    opacity: 0.5;
+    border: 3px inset silver;
+    color: silver;
+    box-shadow: 0 0 10px silver;
+}
+
+#Task {
+    position: relative;
+    top: -410px;
+    width: 100%;
+    text-align: center;
+    font-size: 50px;
+    color: unset;
+}
